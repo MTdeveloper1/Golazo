@@ -17,7 +17,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg bg-light" id="backgroundNav">
-    <div class="container-fluid">
+    <div class="container-fluid" id="inicio">
       <a class="navbar-brand" id="logo" href="#"><img id="logoImg" src="./imagenes/logo.png" alt="" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,27 +41,51 @@
   </nav>
 
   <div class="sliderContainer">
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagenes/city.jpg" class="d-block w-100" alt="Manchester City">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/licha.png" class="d-block w-100" alt="Lisandro Martinez">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/arsenal.png" class="d-block w-100" alt="Arsenal">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden" id="prev">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden" id="next">Next</span>
+      </button>
+    </div>
+
     <div class="tablaSlide">
       <img src="./imagenes/tabla.png" alt="">
     </div>
 </div>
 
+<a href="#inicio" class="arriba">
+  <img src="./imagenes/flechaContraer.png" alt="">
+</a>
 
 <div class="gContainer">
   <article id="reciente" class="recienteContainer">
-    <h2 class="titulos reciente">Mas reciente</h2>
+    <h2 class="titulos reciente">El city de Guardiola</h2>
     <div class="contenedorArticulo">
-      <img class="imagenArticulo" src="./imagenes/messiPateando.jpg" alt="" />
+      <img class="imagenArticulo" src="./imagenes/city.jpg" alt="" />
       <div class="infoContainer">
         <p class="pContainer">
-          <b class="letraGrande">E</b>l equipo de Messi continua ganando, esta
-          vez goleó al Nantes. Los goles fueron de Messi primero a los 22',
-          luego cuando estaba terminando el primer tiempo Neymar es quien pone
-          el marcador 2 a 0, después Sergio Ramos es quien pone el partido 3 a 0
-          y termina el partido con un gol de penal que tomo Neymar. El penal fue
-          ocasionado por Casttelleto, jugador que nadie conoce pero pego un
-          patadón y se llevó la roja. La pulga esta imparable que se agarren las
-          patas en Qatar...
+          <b class="letraGrande">U</b>n city que no para. El conjunto de pep esta haciendo una temporada maravillosa y con su gran fichaje de Halland dan miedo.
+          Esta vez vencieron a un equipo que no les presento dificultades, el Borenmouth no pudo darle pelea a este gran equipo que con los goles de Gundogan, De Bruyne y Foden 
+          lograron una goleada. Los hinchas estan como locos y con el equipo que tienen se estan ilusionando para coronar grandes torneos como la Champions.
+          Al terminar el partido se le pregunto a Foden como se sentía en el club y con Pep, el respondió: "Es el mejor entrenador que le puede tocar a un jugador". 
+          Foden aprendío mucho de Guardiola quien le tiene un cariño especial, tanto así que dijo que después de Messi es la mejor promesa que vio con sus propios ojos.
+          Ahora el City seguirá luchando para quedarse lo mas solitario que pueda en la punta.
         </p>
         <a href="">Ver más</a>
       </div>
