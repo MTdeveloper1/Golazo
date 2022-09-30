@@ -45,7 +45,7 @@ prev.addEventListener("click", function () {
 
 setInterval(function () {
        nextSlide()
-}, 5000);
+}, 2000);
 
 window.onload = function () {
        responsiveSlider();
