@@ -9,6 +9,54 @@ html {
     margin: 0;
     box-sizing: border-box;
 }
+
+#contenedorCarga {
+    background-color: rgb(24, 25, 99);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+
+#carga {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 30vh;
+    margin: auto;
+}
+.loader{
+    margin-top: 10px;
+        display: block;
+        position: relative;
+        height: 12px;
+        width: 80%;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .loader:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background: #ffffff;
+        animation: 1.5s prog ease-in infinite;
+      }
+      
+      @keyframes prog {
+        to  {   width: 100%;}
+      }
+      
+#carga img {
+    width: 200px;
+}
+
 .gContainer {
     display: flex;
     flex-direction: column;

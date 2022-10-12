@@ -16,6 +16,14 @@
 </head>
 
 <body>
+
+  <div id="contenedorCarga">
+    <div id="carga">
+      <img src="/imagenes/logo.png" alt="">
+      <span class="loader"></span>
+    </div>
+  </div>
+
   <nav class="navbar navbar-expand-lg bg-light" id="backgroundNav">
     <div class="container-fluid" id="inicio">
       <a class="navbar-brand" id="logo" href="#"><img id="logoImg" src="./imagenes/logo.png" alt="" /></a>
@@ -30,7 +38,7 @@
           <a class="nav-link" id="cambios" href="#">La liga</a>
           <a class="nav-link" id="cambios" href="#">Ligue one</a>
           <a class="nav-link" id="cambios" href="#">Serie A</a>
-          <a class="nav-link" id="cambios" href="#">Champions League</a>
+          <a class="nav-link" id="cambios" href="predicciones.html">Transpasos</a>
         </div>
         <div class="heiContainer">
           <a id="cambios" href="https://www.heineken.com"><img class="heini" src="./imagenes/heineken.png" alt=""></a>
@@ -218,6 +226,16 @@
     </div>
   </footer>
 
+  <script>
+
+      var contenedor = document.getElementById('contenedorCarga')
+      let interval;
+      interval=setInterval(() => {
+        contenedor.style.visibility = 'hidden';
+        contenedor.style.opacity = '0';
+      }, 1500)
+
+  </script>
 </body>
 
 </html>
