@@ -101,11 +101,11 @@ html {
 
 .navbar-nav {
     background-color: rgb(24, 25, 99);
+    font-size: 20px;
 }
 
 .nav-link:hover {
     text-decoration: underline;
-    font-size: 20px;
     transition: .2s;
 }
 
@@ -317,43 +317,71 @@ body {
 .messiCont img {
     width: 600px;
 }
-/* .transferencia {
+
+/*PASTILLA DE TRANSFERENCIA*/
+.transferencia {
     display: flex;
     flex-direction: row;
     height: 10px;
     width: 150px;
-    border-radius: 10px;
-    border: 1px black;
     margin-left: 100vh;
+    margin-bottom: 100px;
 }
 .rojo {
     background-color: red;
-    width: 30px;
-    height: 10px;
+    width: 35px;
+    height: 15px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .naranja {
     background-color: orangered;
-    width: 30px;
-    height: 10px;
+    width: 35px;
+    height: 15px;
 }  
 .amarillo {
     background-color: orange;
-    width: 30px;
-    height: 10px;
+    width: 35px;
+    height: 15px;
 } 
 .verdeClaro {
     background-color: greenyellow;
-    width: 30px;
-    height: 10px;
+    width: 35px;
+    height: 15px;
 } 
 .verdeOscuro {
     background-color: green;
-    width: 30px;
-    height: 10px;
-} */
+    width: 35px;
+    height: 15px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+} 
 
 
-
+.transpasosInicio {
+    background-image: url(./imagenes/Pinot\ Noir.jpg);
+    height: 500px;
+}
+.contenedorTxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+}
+.contenedorTxt h3 {
+    margin-top: 20vh;
+    margin-left: 5%;
+    font-size: calc(3em + 3vw);
+    font-family: 'Bebas Neue', cursive;
+}
+.contenedorTxt p {
+    width: 50%;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 150px;
+    font-size: calc(.6em + .6vw)
+}
 
 @media (min-width: 1100px) {
     .imagenesContainer {
@@ -486,4 +514,11 @@ body {
         height:63px;
         line-height: 66px;
 	}
+    .contenedorTxt {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenedorTxt p {
+        margin-top: 0;
+    }
 }
