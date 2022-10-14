@@ -324,8 +324,6 @@ body {
     flex-direction: row;
     height: 10px;
     width: 150px;
-    margin-left: 100vh;
-    margin-bottom: 100px;
 }
 .rojo {
     background-color: red;
@@ -359,8 +357,22 @@ body {
 
 
 .transpasosInicio {
-    background-image: url(./imagenes/Pinot\ Noir.jpg);
+    background-image: url(./imagenes/fichajesFondo.png);
+    margin-top: 40px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
     height: 500px;
+}
+.transpasosInicio:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
 }
 .contenedorTxt {
     display: flex;
@@ -368,6 +380,7 @@ body {
     align-items: center;
     flex-direction: row;
     color: white;
+    position: relative;
 }
 .contenedorTxt h3 {
     margin-top: 20vh;
@@ -380,8 +393,9 @@ body {
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 150px;
-    font-size: calc(.6em + .6vw)
+    font-size: calc(.65em + .65vw)
 }
+
 
 @media (min-width: 1100px) {
     .imagenesContainer {
@@ -479,6 +493,19 @@ body {
     }
     .duoContainer h3 {
         margin-left: 5px;
+    }
+    .tarjetaFichajes {
+        background-image: url(./imagenes/arsenal.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 50%;
+        height: 450px;
+    }
+    .arribaTarjeta {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.329);
+        height: 100%;
     }
 }
 /* BOTON FIXED */
