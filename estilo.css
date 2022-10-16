@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ibarra+Real+Nova:wght@500&family=Inter:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@4    00&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -8,6 +9,7 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 #contenedorCarga {
@@ -101,7 +103,7 @@ html {
 
 .navbar-nav {
     background-color: rgb(24, 25, 99);
-    font-size: 20px;
+    font-size: calc(.55em + .55vw)
 }
 
 .nav-link:hover {
@@ -156,8 +158,16 @@ html {
     margin-top: 1vh;
 }
 
-.imagenesContainer {
+.messiCont a img {
+    width: 100%
+}
+.imagenesContainer img{
     filter: brightness(.5);
+}
+
+.imagenesContainer button{
+    background-color: rgb(216, 216, 216);
+    box-shadow: rgb(95, 95, 95) 5px 5px 10px;
 }
 
 .duoImagenes {
@@ -168,6 +178,10 @@ html {
 .duoContainer {
     display: flex;
     flex-direction: column;
+}
+
+.duoContainer h3 {
+    font-weight: bolder;
 }
 
 .marcoFoto {
@@ -190,6 +204,13 @@ html {
     margin-top: 50px
 }
 
+.inputInicio {
+    padding: 3px;
+}
+
+.pContainer {
+    font-size: 18px;
+}
 .lineaPortada {
     width: 200px;
     background-color: rgb(24, 25, 99);
@@ -247,8 +268,7 @@ form button {
 }
 
 form button:hover {
-    border: solid 1px white;
-    padding: 8px;
+    padding: px 10px;
     background-color: rgb(226, 226, 226);
     transition: .2s;
 }
@@ -396,8 +416,7 @@ body {
     font-size: calc(.65em + .65vw)
 }
 
-
-@media (min-width: 1100px) {
+@media (min-width: 1075px) {
     .imagenesContainer {
         display: flex;
         flex-direction: row;
@@ -487,9 +506,14 @@ body {
     }
     .sliderContainer {
         display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .carousel {
+        width: 50%;
     }
     .tablaSlide img{
-        margin-top: 2vh;
+        margin-top: 5vh;
     }
     .duoContainer h3 {
         margin-left: 5px;
