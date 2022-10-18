@@ -343,34 +343,34 @@ body {
     display: flex;
     flex-direction: row;
     height: 10px;
-    width: 150px;
+    width: 200px;
 }
 .rojo {
     background-color: red;
-    width: 35px;
-    height: 15px;
+    width: 40px;
+    height: 20px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
 .naranja {
     background-color: orangered;
-    width: 35px;
-    height: 15px;
+    width: 45px;
+    height: 20px;
 }  
 .amarillo {
     background-color: orange;
-    width: 35px;
-    height: 15px;
+    width: 45px;
+    height: 20px;
 } 
 .verdeClaro {
     background-color: greenyellow;
-    width: 35px;
-    height: 15px;
+    width: 45px;
+    height: 20px;
 } 
 .verdeOscuro {
     background-color: green;
-    width: 35px;
-    height: 15px;
+    width: 45px;
+    height: 20px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 } 
@@ -414,6 +414,36 @@ body {
     margin-right: 100px;
     margin-top: 150px;
     font-size: calc(.65em + .65vw)
+}
+.duoFichajes {
+    width: 100%;
+}
+
+.tarjetaFichajes {
+    background-image: url(./imagenes/arsenal4.jpg);
+    padding: 120px 0px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.tarjetaFichajes:before {
+    content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+.arribaTarjeta {
+        font-size: 40px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative
 }
 
 @media (min-width: 1075px) {
@@ -518,19 +548,16 @@ body {
     .duoContainer h3 {
         margin-left: 5px;
     }
-    .tarjetaFichajes {
-        background-image: url(./imagenes/arsenal.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 50%;
-        height: 450px;
-    }
-    .arribaTarjeta {
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.329);
-        height: 100%;
-    }
+    
+.tarjetaFichajes {
+    width: 50%;
+    padding: 180px 0px;
+}
+.fSelec:hover {
+    margin-top: 10px;
+    transition: .2s;
+    cursor: pointer;
+}
 }
 /* BOTON FIXED */
 
