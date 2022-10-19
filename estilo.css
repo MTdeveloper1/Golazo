@@ -30,31 +30,35 @@ html {
     bottom: 30vh;
     margin: auto;
 }
-.loader{
+
+.loader {
     margin-top: 10px;
-        display: block;
-        position: relative;
-        height: 12px;
-        width: 80%;
-        border: 1px solid #fff;
-        border-radius: 10px;
-        overflow: hidden;
-      }
-      .loader:after{
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 0;
-        background: #ffffff;
-        animation: 1.5s prog ease-in infinite;
-      }
-      
-      @keyframes prog {
-        to  {   width: 100%;}
-      }
-      
+    display: block;
+    position: relative;
+    height: 12px;
+    width: 80%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.loader:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #ffffff;
+    animation: 1.5s prog ease-in infinite;
+}
+
+@keyframes prog {
+    to {
+        width: 100%;
+    }
+}
+
 #carga img {
     width: 200px;
 }
@@ -65,6 +69,7 @@ html {
     justify-content: center;
     align-items: center;
 }
+
 .title {
     color: white;
 }
@@ -78,9 +83,11 @@ html {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
 }
+
 .marcoFoto {
     width: 1000px;
 }
+
 .titulos {
     font-size: 4rem;
 }
@@ -161,11 +168,12 @@ html {
 .messiCont a img {
     width: 100%
 }
-.imagenesContainer img{
+
+.imagenesContainer img {
     filter: brightness(.5);
 }
 
-.imagenesContainer button{
+.imagenesContainer button {
     background-color: rgb(216, 216, 216);
     box-shadow: rgb(95, 95, 95) 5px 5px 10px;
 }
@@ -211,6 +219,7 @@ html {
 .pContainer {
     font-size: 18px;
 }
+
 .lineaPortada {
     width: 200px;
     background-color: rgb(24, 25, 99);
@@ -334,6 +343,7 @@ body {
 .slide {
     margin-top: 6vh;
 }
+
 .messiCont img {
     width: 600px;
 }
@@ -345,6 +355,7 @@ body {
     height: 10px;
     width: 200px;
 }
+
 .rojo {
     background-color: red;
     width: 40px;
@@ -352,48 +363,54 @@ body {
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
+
 .naranja {
     background-color: orangered;
     width: 45px;
     height: 20px;
-}  
+}
+
 .amarillo {
     background-color: orange;
     width: 45px;
     height: 20px;
-} 
+}
+
 .verdeClaro {
     background-color: greenyellow;
     width: 45px;
     height: 20px;
-} 
+}
+
 .verdeOscuro {
     background-color: green;
     width: 45px;
     height: 20px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-} 
+}
 
 
 .transpasosInicio {
     background-image: url(./imagenes/fichajesFondo.png);
     margin-top: 40px;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
-    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 700px;
 }
+
 .transpasosInicio:before {
-	content:'';
-	position: absolute;
-        top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.6);
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
 }
+
 .contenedorTxt {
     display: flex;
     justify-content: center;
@@ -402,12 +419,14 @@ body {
     color: white;
     position: relative;
 }
+
 .contenedorTxt h3 {
     margin-top: 20vh;
     margin-left: 5%;
     font-size: calc(3em + 3vw);
     font-family: 'Bebas Neue', cursive;
 }
+
 .contenedorTxt p {
     width: 50%;
     margin-left: 100px;
@@ -415,35 +434,62 @@ body {
     margin-top: 150px;
     font-size: calc(.65em + .65vw)
 }
+
+marquee {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+marquee pre {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
 .duoFichajes {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .tarjetaFichajes {
-    background-image: url(./imagenes/arsenal4.jpg);
-    padding: 120px 0px;
-	text-align: center;
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
+    padding: 25% 0;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
+
 .tarjetaFichajes:before {
-    content:'';
-	position: absolute;
-        top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.6);
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
 }
+
 .arribaTarjeta {
-        font-size: 40px;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative
+    font-size: calc(.95em + .95vw);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative
+}
+
+#gabriel {
+    background-image: url(./imagenes/arsenal4.jpg);
+}
+
+#jose {
+    background-image: url(./imagenes/newcastle.png);
 }
 
 @media (min-width: 1075px) {
@@ -487,15 +533,19 @@ body {
         display: flex;
         justify-content: center;
     }
+
     .recienteContainer {
         width: 87%;
     }
+
     .recienteContainer img {
         width: 600px;
     }
-    .recienteContainer p{
+
+    .recienteContainer p {
         text-align: justify;
     }
+
     footer {
         height: 250px;
         flex-direction: row;
@@ -512,9 +562,11 @@ body {
     .reciente {
         margin-top: 40px;
     }
+
     .navBar-collapse {
         justify-content: end;
     }
+
     .tellerInicio {
         display: flex;
         justify-content: center;
@@ -522,11 +574,13 @@ body {
         flex-direction: column;
         margin-top: 0;
     }
+
     .heiContainer {
         width: 50%;
         display: flex;
         justify-content: end;
     }
+
     .navbar-nav {
         width: 50%;
     }
@@ -534,68 +588,83 @@ body {
     .adidas {
         margin-top: 2.2vh;
     }
+
     .sliderContainer {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .carousel {
         width: 50%;
     }
-    .tablaSlide img{
+
+    .tablaSlide img {
         margin-top: 5vh;
     }
+
     .duoContainer h3 {
         margin-left: 5px;
     }
-    
-.tarjetaFichajes {
-    width: 50%;
-    padding: 180px 0px;
+
+    .duoFichajes {
+        flex-direction: row;
+    }
+
+    .tarjetaFichajes {
+        width: 50%;
+        padding: 250px 0;
+    }
+
+    .fSelec:hover {
+        margin-top: 2px;
+        transition: .2s;
+        cursor: pointer;
+    }
 }
-.fSelec:hover {
-    margin-top: 10px;
-    transition: .2s;
-    cursor: pointer;
-}
-}
+
 /* BOTON FIXED */
 
 
-.arriba{
-    position:fixed;
-    width:60px;
-    height:60px;
+.arriba {
+    position: fixed;
+    width: 60px;
+    height: 60px;
     line-height: 63px;
-    bottom:25px;
-    right:25px;
+    bottom: 25px;
+    right: 25px;
     background-color: rgb(24, 25, 99);
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:35px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
-    z-index:100;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
     transition: all 300ms ease;
 }
-.arriba:hover{
+
+.arriba:hover {
     background-color: rgb(14, 15, 54);
     box-shadow: rgb(24, 25, 99) 2px 2px 10px;
 }
+
 .arriba img {
     width: 70%;
     margin-bottom: 1vh;
 }
-@media only screen and (min-width:320px) and (max-width:768px){
-    .arriba{
-        width:63px;
-        height:63px;
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .arriba {
+        width: 63px;
+        height: 63px;
         line-height: 66px;
-	}
+    }
+
     .contenedorTxt {
         flex-direction: column;
         text-align: center;
     }
+
     .contenedorTxt p {
         margin-top: 0;
     }
