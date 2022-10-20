@@ -110,7 +110,7 @@ html {
 
 .navbar-nav {
     background-color: rgb(24, 25, 99);
-    font-size: calc(.55em + .55vw)
+    font-size: calc(.65em + .65vw)
 }
 
 .nav-link:hover {
@@ -432,7 +432,7 @@ body {
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 150px;
-    font-size: calc(.65em + .65vw)
+    font-size: calc(.80em + .80vw)
 }
 
 marquee {
@@ -592,15 +592,25 @@ marquee pre {
     .sliderContainer {
         display: flex;
         justify-content: center;
-        align-items: center;
+    }
+    .verTabla {
+        background-color: rgb(24, 25, 99);
+        color: white;
+        margin-top: 70px;
+        padding: 10px 30px;
+        height: 50px;
+        border: none;
+        border-bottom: solid rgb(224, 0, 0) 3px;
+    }
+    .verTabla:hover {
+        border-right: solid rgb(224, 0, 0) 4px;
+        border-bottom: solid rgb(224, 0, 0) 4px;
+        transition: .1s;
     }
 
     .carousel {
-        width: 50%;
-    }
-
-    .tablaSlide img {
-        margin-top: 5vh;
+        margin-top: 40px;
+        width: 60%;
     }
 
     .duoContainer h3 {
