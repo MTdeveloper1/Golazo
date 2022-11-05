@@ -43,7 +43,9 @@
     </div>
     
     <button class="verTabla">Ver Tabla</button>
-
+    <div class="tablaContainer" id="tabla ">
+      <img class="tablaImg" src="./imagenes/tablaPremier.png" alt="">
+    </div>
 </div>
 
 <a href="#inicio" class="arriba">
@@ -157,6 +159,7 @@
 
   <script src="./elementos/navBar.js"></script>
   <script src="./elementos/footer.js"></script>
+  <script src="./tabla.js"></script>
 </body>
 
 </html>

@@ -286,14 +286,21 @@ form button:hover {
     width: 40px;
     margin: 5px;
 }
-
+.transferencia button {
+    background-color: transparent;
+}
+.transferencia button:hover {
+    background-color: transparent;
+}
 .icon:hover,
 .icon:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.50em);
     transition: .2s;
 }
-
+form {
+    filter: brightness(1);
+}
 .redes {
     margin-bottom: 20px;
 }
@@ -492,6 +499,28 @@ marquee pre {
     background-image: url(./imagenes/newcastle.png);
 }
 
+.verTabla {
+    background-color: rgb(24, 25, 99);
+    color: white;
+    margin-top: 70px;
+    padding: 10px 30px;
+    height: 50px;
+    border: none;
+    border-bottom: solid rgb(224, 0, 0) 3px;
+}
+.verTabla:hover {
+    border-bottom: solid rgb(224, 0, 0) 4px;
+    transition: .1s;
+}
+.tablaContainer {
+    display: none;
+}
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (min-width: 1075px) {
     .imagenesContainer {
         display: flex;
@@ -592,20 +621,6 @@ marquee pre {
     .sliderContainer {
         display: flex;
         justify-content: center;
-    }
-    .verTabla {
-        background-color: rgb(24, 25, 99);
-        color: white;
-        margin-top: 70px;
-        padding: 10px 30px;
-        height: 50px;
-        border: none;
-        border-bottom: solid rgb(224, 0, 0) 3px;
-    }
-    .verTabla:hover {
-        border-right: solid rgb(224, 0, 0) 4px;
-        border-bottom: solid rgb(224, 0, 0) 4px;
-        transition: .1s;
     }
 
     .carousel {
